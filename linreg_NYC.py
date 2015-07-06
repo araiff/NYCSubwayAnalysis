@@ -42,7 +42,8 @@ def predictions(dataframe):
     https://www.dropbox.com/s/meyki2wl9xfa7yk/turnstile_data_master_with_weather.csv    
     
 
-    """for i in range(dataframe.shape[0]):
+    """
+    for i in range(dataframe.shape[0]):
         try:
             dataframe.loc[i,'weekday'] = date.weekday(datetime.strptime(dataframe.loc[i,'DATEn'],'%m/%d/%Y'))
         except:
